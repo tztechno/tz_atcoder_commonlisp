@@ -1,4 +1,4 @@
-//practiceA.cml
+//practiceA.lisp
 ##################################
 1
 2 3
