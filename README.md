@@ -28,7 +28,16 @@ Common Lisp (SBCL 2.0.3)
 ```
 ---
 ```
+(defun complement-base (base)
+  (cond
+    ((string= base "A") "T")
+    ((string= base "T") "A")
+    ((string= base "C") "G")
+    ((string= base "G") "C")
+    (t "Unknown")))
 
+(princ (complement-base (read-line)))
+(fresh-line)
 ```
 ---
 ```
